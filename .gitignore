@@ -1,0 +1,6 @@
+/node_modules
+/backend/node_modules
+/frontend/node_modules
+/frontend/src/firebaseConfig.ts
+/backend/key.ts
+/backend/service-account.json

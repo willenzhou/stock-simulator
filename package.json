@@ -1,0 +1,25 @@
+{
+  "name": "web-dev-final-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/petecao/web-dev-final-project.git",
+  "author": "Peter Cao <peterspellingbee@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "cd backend && yarn start",
+    "frontend": "cd frontend && yarn start",
+    "start": "concurrently \"yarn server\" \"yarn frontend\"",
+    "heroku-postbuild": "yarn workspaces run build"
+  },
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "concurrently": "^6.1.0",
+    "firebase": "^8.4.2",
+    "heroku": "^7.53.1"
+  }
+}
